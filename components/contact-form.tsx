@@ -24,6 +24,7 @@ export default function ContactForm() {
       const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         body: new URLSearchParams(formData as any).toString(),
       })
 
@@ -33,6 +34,7 @@ export default function ContactForm() {
         setIsError(true)
       }
     } catch (error) {
+      console.error(error)
       setIsError(true)
       setIsSuccess(false)
     } finally {
