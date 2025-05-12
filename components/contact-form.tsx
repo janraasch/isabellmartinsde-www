@@ -51,9 +51,6 @@ export default function ContactForm() {
     >
       <input type="hidden" name="form-name" value="Kontakt (Mensch)" />
 
-      {/* Subject field (optional but helpful) */}
-      <input type="hidden" name="subject" value="Kontakt (Mensch)" />
-
       <div className="grid gap-4 sm:grid-cols-2">
         {/* For spam protection */}
         <div className="space-y-2 hidden">
