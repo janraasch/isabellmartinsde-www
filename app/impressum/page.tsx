@@ -5,7 +5,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Impressum | Isabell Martins Ernährungsberatung",
-  description: "Impressum und rechtliche Informationen zur Ernährungsberatung von Isabell Martins.",
+  description: "Impressum und Datenschutzinformationen.",
   robots: {
     index: true,
     follow: true,
