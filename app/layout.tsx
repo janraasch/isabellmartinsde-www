@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: 'https://www.isabellmartins.de/opengraph-image.jpeg', // Must be an absolute URL
+        url: 'https://www.isabellmartins.de/images/opengraph-image.jpeg', // Must be an absolute URL
         width: 1200,
         height: 630,
         alt: 'Isabell Martins Ernährungsberatung'
@@ -59,7 +59,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Isabell Martins | Professionelle Ernährungsberatung",
     description:
-      "Professionelle Ernährungsberatung für Menschen in Lübeck und online. Zertifizierte Ernährungsberaterin mit über 10 Jahren Erfahrung.",
+      "Professionelle Ernährungsberatung wann & wo du willst. Zertifizierte Ernährungsberaterin mit über 10 Jahren Erfahrung.",
+    images: [
+      {
+        url: 'https://www.isabellmartins.de/images/opengraph-image.jpeg', // Must be an absolute URL
+        alt: 'Isabell Martins Ernährungsberatung',
+      },
+    ],
   },
   robots: {
     index: true,
