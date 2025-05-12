@@ -11,13 +11,13 @@ NETLIFY_NEXT_PLUGIN_SKIP = "true"
 # PER-DEPLOY.
 
 [[redirects]]
-  from = "http://agitated-euclid-60fa30.netlify.app/*"
+  from = "http://willowy-jalebi-d3e8a9.netlify.app/*"
   to = "http://www.isabellmartins.de/:splat"
   force = true
   status = 301
 
 [[redirects]]
-  from = "https://agitated-euclid-60fa30.netlify.app/*"
+  from = "https://willowy-jalebi-d3e8a9.netlify.app/*"
   to = "https://www.isabellmartins.de/:splat"
   force = true
   status = 301
