@@ -13,8 +13,7 @@ export default function ContactSection() {
           <div>
             <h3 className="mb-6 font-serif text-2xl font-semibold text-gray-900">Erzähl mir mehr von Dir</h3>
             <p className="mb-8 text-lg text-gray-700">
-              Ob du Fragen hast oder direkt einen Termin vereinbaren möchtest - ich freue mich, von dir zu hören. Fülle
-              einfach das Formular aus oder kontaktiere mich direkt.
+              Ob du Fragen hast oder direkt einen Termin vereinbaren möchtest - ich freue mich, von dir zu hören.
             </p>
 
             <div className="space-y-4">

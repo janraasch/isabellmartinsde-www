@@ -21,14 +21,13 @@ export default function ContactForm() {
 
     try {
       const formData = new FormData(e.currentTarget)
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/", {
         method: "POST",
-        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData as any).toString(),
       })
 
-      const data = await response.json()
-
-      if (data.success) {
+      if (response.ok) {
         setIsSuccess(true)
       } else {
         setIsError(true)
@@ -42,20 +41,26 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-      <input type="hidden" name="access_key" value="204f22c8-c059-4b95-9f2f-7b37fef5f108" />
+    <form 
+      className="space-y-6 rounded-lg border border-gray-200 bg-white p-6 shadow-sm"
+      data-netlify="true"
+      data-netlify-honeypot="you-like-this-field"
+      name="Kontakt (Mensch)"
+      onSubmit={handleSubmit}
+      method="POST"
+    >
+      <input type="hidden" name="form-name" value="Kontakt (Mensch)" />
 
-      {/* For spam protection */}
-      <input type="checkbox" name="botcheck" className="hidden" />
-
-
-      {/* Optional: From Name you want to see in the email. Default is "Notifications" */}
-      <input type="hidden" name="from_name" value="Neue Anfrage" />
-      
       {/* Subject field (optional but helpful) */}
       <input type="hidden" name="subject" value="Kontakt (Mensch)" />
 
       <div className="grid gap-4 sm:grid-cols-2">
+        {/* For spam protection */}
+        <div className="space-y-2 hidden">
+          <Label htmlFor="you-like-this-field">Menschen, bitte nicht ausfüllen</Label>
+          <Input id="you-like-this-field" name="you-like-this-field" className="hidden" />
+        </div>
+
         <div className="space-y-2">
           <Label htmlFor="vorname">Vorname</Label>
           <Input id="vorname" name="Vorname" />
@@ -96,7 +101,7 @@ export default function ContactForm() {
 
       {/* Success message */}
       {isSuccess && (
-        <div className="rounded-md bg-green-50 p-4 text-sm text-green-800">Vielen Dank für Deine Nachricht!</div>
+        <div className="rounded-md bg-green-50 p-4 text-sm text-green-800">Vielen Dank für Deine Anfrage!</div>
       )}
 
       {/* Error message */}
