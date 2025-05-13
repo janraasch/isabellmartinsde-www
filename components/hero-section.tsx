@@ -45,7 +45,7 @@ export default function HeroSection() {
           </Button>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 -translate-x-1/2 animate-bounce">
           <Link
             href="#intro"
             className="flex items-center justify-center rounded-full bg-white/20 p-2 backdrop-blur-sm transition-colors hover:bg-white/30"
