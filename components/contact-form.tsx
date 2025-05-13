@@ -86,7 +86,7 @@ export default function ContactForm() {
         <Textarea
           id="message"
           name="Text"
-          placeholder="Wie kann ich dir helfen? Teile mir gerne deine Wünsche, Fragen oder Ziele mit."
+          placeholder="Wie kann ich Dir helfen? Teile mir gerne Deine Wünsche, Fragen oder Ziele mit."
           className="min-h-[120px]"
           required
         />
@@ -94,7 +94,7 @@ export default function ContactForm() {
 
       {!isSuccess && (
         <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700" disabled={isSubmitting}>
-          {isSubmitting ? "Wird gesendet..." : "Nachricht senden"}
+          {isSubmitting ? "Wird gesendet..." : "Anfrage senden"}
         </Button>
       )}
 
