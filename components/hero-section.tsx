@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ChevronDown } from "lucide-react"
+import { ChevronDown, SquareArrowOutUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function HeroSection() {
@@ -41,7 +41,10 @@ export default function HeroSection() {
 
         <div className="mt-8">
           <Button asChild variant="secondary" size="lg" className="bg-rose-600 hover:bg-rose-700 text-white">
-            <a href="https://hunde.isabellmartins.de">Neu: Ernährungsberatung für Hunde</a>
+            <a href="https://hunde.isabellmartins.de" className="flex items-center gap-2">
+              <SquareArrowOutUpRight className="h-5 w-5" />
+              <span>Ernährungsberatung für Hunde</span>
+            </a>
           </Button>
         </div>
 
