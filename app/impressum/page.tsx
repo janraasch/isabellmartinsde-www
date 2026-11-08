@@ -30,8 +30,9 @@ export default function ImpressumPage() {
             <div className="space-y-2 text-gray-700">
               <p>Isabell Martins</p>
               <p>Diplom-Ernährungswissenschaftlerin</p>
-              <p className="mt-4">Percevalstraße 11</p>
-              <p>23564 Lübeck</p>
+              <p>Ernährungsberaterin/DGE</p>
+              <p className="mt-4">Hopfenwiese 8</p>
+              <p>24837 Schleswig</p>
               <p className="mt-4">
                 E-Mail:{" "}
                 <a href="mailto:beratung@isabellmartins.de" className="text-emerald-600 hover:underline">
