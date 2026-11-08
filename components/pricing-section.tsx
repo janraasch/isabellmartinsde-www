@@ -39,7 +39,7 @@ export default function PricingSection() {
                 <RefreshCcw className="h-8 w-8" />
               </div>
               <h3 className="mb-2 text-2xl font-bold text-gray-900">Folgegespräch</h3>
-              <div className="mb-4 text-3xl font-bold text-emerald-600">80 €</div>
+              <div className="mb-4 text-3xl font-bold text-emerald-600">90 €</div>
               <ul className="mb-6 space-y-3">
                 <li className="flex items-start">
                   <Check className="mr-2 h-5 w-5 text-emerald-500" />
