@@ -21,7 +21,7 @@ export default function AboutSection() {
 
             <p className="mb-4 text-lg">
               Hallo, ich bin Isabell Martins - zertifizierte Ernährungsberaterin mit über 10 Jahren Erfahrung. Meine
-              Leidenschaft ist es, Menschen dabei zu helfen, durch gesunde Ernährung ein besseres Leben zu führen.
+              Leidenschaft ist es, Menschen dabei zu unterstützen, durch gesunde Ernährung mehr Wohlbefinden zu erlangen.
             </p>
 
             <p className="mb-4 text-lg">
@@ -33,7 +33,7 @@ export default function AboutSection() {
               fortwährende Qualitätssicherung durch regelmäßige Fortbildungen.
             </p>
             <p className="mb-8 text-lg">
-              Seit 2015 bin ich selbstständig tätig, erst in Hamburg und seit 2017 in Lübeck. Meine Schwerpunkte sind u.
+              Seit 2015 bin ich selbstständig tätig, erst in Hamburg, 2017-2026 in Lübeck und nun seit 2026 in Schleswig. Meine Schwerpunkte sind u.
               a. Adipositas, Endometriose, Ernährung im Einklang mit dem Zyklus, Sporternährung bei Frauen, Reflux,
               chronisch entzündliche Erkrankungen und Autoimmunerkrankungen. Im präventiven und therapeutischen Bereich
               berate ich sehr gerne zu vegetarischer und veganer Ernährung.
